@@ -169,9 +169,19 @@ CREATE TABLE "orders"(
 "order_approved_at" NUMERIC,
 "order_delivered_carrier_date" NUMERIC,
 "order_delivered_customer_date" NUMERIC,
-"order_estimated_delivery_date" NUMERIC
+"order_estimated_delivery_date" NUMERIC,
 FOREIGN KEY("customer_id") REFERENCES "customers"("customer_id"),
 FOREIGN KEY("order_id") REFERENCES "reviews"("order_id"),
 FOREIGN KEY("order_id") REFERENCES "payments"("order_id"),
 FOREIGN KEY("order_id") REFERENCES "order_items"("order_id")
 );
+DROP TABLE "reviews;";
+DROP TABLE "temp2;";
+DROP TABLE "temp";
+
+CREATE TABLE "delayed_routes"(
+"customer_city" TEXT,
+"seller_city" TEXT,
+"late_rate" NUMERIC,
+"num_orders" INT
+)
