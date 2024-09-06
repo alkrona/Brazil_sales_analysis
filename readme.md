@@ -20,7 +20,7 @@ Before you begin, ensure you have the following installed on your system:
 ## Getting Started
 1. **Download the Database**
 First, download the SQLite database file from the following link:
-[Download Brazil Sales Database](link to database)
+[Download Brazil Sales Database](https://drive.google.com/file/d/1PIJZVGWsY2uVVDolXYOfA9keOpNyVdjt/view?usp=sharing)
 2. **Clone the Repository**
 Clone the analysis scripts and additional resources using the following 
 command:
@@ -41,7 +41,7 @@ Brazil_sales_analysis/
 ├── data/
 │   └── brazil_sales.db
 │
-├── scripts/
+├── SQL/
 │   ├── data_cleaning.sql
 │   └── analysis_queries.sql
 │
